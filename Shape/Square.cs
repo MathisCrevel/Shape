@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Shape
 {
-    internal class Circle : Form
+    
+    public class Square : Form
     {
-        public double Radius { get; set; }
+        public double Side { get; set; }
 
-        public Circle(double radius)
+        public Square(double side)
         {
-            Radius = radius;
+            Side = side;
         }
         public override double Area()
         {
-            return Radius * Radius * Math.PI;
+            return Side * Side;
         }
     }
 }

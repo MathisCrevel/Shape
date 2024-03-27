@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shape
+namespace Shape 
 {
-    internal class Triangle
+    internal class Triangle : Form
     {
         public double Height { get; set; }
         public double Base { get; set; }
@@ -15,6 +15,9 @@ namespace Shape
             Height = height;
             this.Base = Base;
         }
-
+        public override double Area()
+        {
+            return 0.5 * Base * Height;
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shape
 {
-    public class Rectangle
+    public class Rectangle : Form
     {
         public double Height { get; set; }
         public double Width { get; set; }
@@ -15,6 +15,10 @@ namespace Shape
         {
             Height = height;
             Width = width;
+        }
+        public override double Area()
+        {
+            return Height * Width;
         }
     }
 }
