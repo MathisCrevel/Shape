@@ -9,11 +9,11 @@ namespace Shape
     internal class Triangle
     {
         public double Height { get; set; }
-        public double Width { get; set; }
-        public Triangle(double height, double width) 
+        public double Base { get; set; }
+        public Triangle(double height, double Base) 
         {
             Height = height;
-            Width = width;
+            this.Base = Base;
         }
 
     }

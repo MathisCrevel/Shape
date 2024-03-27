@@ -30,7 +30,7 @@ namespace Shape
                 if(obj is Triangle)
                 {
                     objTriangle = (Triangle)obj;
-                    area += objTriangle.Height * objTriangle.Width;
+                    area += 0.5 * objTriangle.Base * objTriangle.Height;
                 }
             }
             return area;
